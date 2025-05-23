@@ -601,15 +601,37 @@
         display: flex;
         align-items: center;
         margin-bottom: 1.5rem;
-        padding: 1rem;
-        background: #f8fafc;
-        border-radius: 8px;
-        border-left: 4px solid #2563eb;
+        padding: 1.2rem;
+        background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+        transition: all 0.3s ease;
+        border-bottom: 3px solid #2563eb;
+      }
+      .info-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
       }
       .info-item i {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         color: #2563eb;
-        margin-right: 1rem;
+        margin-right: 1.2rem;
+        background: rgba(37, 99, 235, 0.1);
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+      }
+      .info-item:hover i {
+        background: rgba(37, 99, 235, 0.2);
+        transform: scale(1.1);
+      }
+      .info-item span {
+        font-weight: 500;
+        color: #334155;
       }
       .contact-form {
         flex: 1;
