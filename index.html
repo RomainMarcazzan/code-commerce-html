@@ -499,31 +499,44 @@
         justify-content: center;
         border-radius: 16px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        text-align: center; /* Added for centering text */
-        padding: 2rem; /* Added padding */
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        position: relative;
+        overflow: hidden;
       }
-      .video-placeholder h3 { /* Added style for h3 */
-        font-size: 1.5rem;
-        color: #1e293b;
-        margin-bottom: 0.5rem;
+      .video-placeholder:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
-      .video-placeholder p { /* Added style for p */
-        font-size: 1.1rem;
-        color: #64748b;
-        margin-bottom: 1.5rem;
-        max-width: 500px; /* Added max-width */
-      }
-      .play-button {
-        font-size: 3rem;
+      .video-placeholder i {
+        font-size: 4rem;
         color: #2563eb;
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
         cursor: pointer;
-        transition: transform 0.2s ease;
       }
-      .play-button:hover {
+      .video-placeholder i:hover {
         transform: scale(1.1);
+        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
       }
-
-      /* CTA Section */
+      .video-placeholder p {
+        margin-top: 1rem;
+        color: #64748b;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
       .demo-cta {
         text-align: center;
         background: #fff;
@@ -970,7 +983,7 @@
             d'abonnement récurrents.
           </p>
           <div class="hero-buttons">
-            <a href="#demo" class="btn-primary">Démo de la boutique</a>
+            <a href="#demo" class="btn-primary">Voir la démo</a>
             <a href="#contact" class="btn-secondary">Parlons de votre projet</a>
           </div>
         </div>
@@ -1142,22 +1155,15 @@
         <div class="video-container">
           <!-- Placeholder for future video -->
           <div class="video-placeholder">
-            <i class="fas fa-play-circle play-button"></i>
-            <h3>Découvrez notre démo interactive</h3>
-            <p>
-              Prêt à découvrir comment Code Commerce peut transformer votre activité en ligne ? Explorez notre solution
-              e-commerce en action.
-            </p>
-            <a href="https://demo-web.code-commerce.fr" class="btn-primary" target="_blank" rel="noopener noreferrer"
-              >Démo de la boutique</a
-            >
+            <i class="fas fa-play-circle"></i>
+            <p>Vidéo de démonstration à venir</p>
           </div>
         </div>
         <div class="demo-cta">
           <h3>Prêt à découvrir ?</h3>
           <p>Explorez notre solution e-commerce en action</p>
-          <a href="https://demo-web.code-commerce.fr" class="btn-primary" target="_blank" rel="noopener noreferrer"
-            >Voir la démo</a
+          <a href="https://demo-web.code-commerce.fr/" class="btn-primary" target="_blank"
+            >Parcourir la boutique de démo</a
           >
         </div>
       </div>
