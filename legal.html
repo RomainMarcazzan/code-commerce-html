@@ -149,42 +149,64 @@
 
       /* Footer */
       .footer {
-        background-color: #1e293b;
+        background: #1e293b;
         color: #e2e8f0;
+        padding: 3rem 0 1.5rem;
+        text-align: center;
       }
       .footer .container {
-        padding: 3rem 0;
+        padding-bottom: 1.5rem;
       }
       .footer-content {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
       }
-      .footer-column h3 {
+      .footer-logo h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
         color: #fff;
-        margin-bottom: 1.5rem;
-        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
       }
-      .footer-column ul {
-        list-style: none;
-      }
-      .footer-column ul li {
-        margin-bottom: 0.75rem;
-      }
-      .footer-column a {
-        color: #cbd5e1;
-        transition: color 0.3s ease;
-      }
-      .footer-column a:hover {
+      .footer-logo span {
         color: #f97316;
       }
-      .footer-bottom {
-        border-top: 1px solid #334155;
-        margin-top: 2rem;
-        padding-top: 2rem;
-        text-align: center;
+      .footer-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      .footer-links a {
         color: #94a3b8;
-        font-size: 0.875rem;
+        transition: color 0.3s ease;
+      }
+      .footer-links a:hover {
+        color: #fff;
+      }
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .social-links a {
+        color: #94a3b8;
+        font-size: 1.5rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      .social-links a:hover {
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .copyright {
+        font-size: 0.9rem;
+        color: #94a3b8;
+        border-top: 1px solid #334155;
+        padding-top: 1.5rem;
+        margin-top: 1rem;
       }
 
       /* Responsive */
@@ -315,54 +337,44 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-column">
-            <h3>Code Commerce</h3>
-            <p>Solutions e-commerce personnalisées en TypeScript pour une expérience utilisateur exceptionnelle.</p>
+          <div class="footer-logo">
+            <h2>Code<span>Commerce</span></h2>
+            <p>Solutions e-commerce personnalisées</p>
           </div>
-          <div class="footer-column">
-            <h3>Liens</h3>
-            <ul>
-              <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
-              <li><a href="index.html#demo">Démo</a></li>
-              <li><a href="index.html#process">Processus</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Contact</h3>
-            <ul>
-              <li><i class="fas fa-envelope"></i> contact@codecommerce.com</li>
-              <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Suivez-nous</h3>
-            <div class="social-icons">
-              <a
-                href="https://www.linkedin.com/company/code-commerce-fr/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/codecommerce.fr/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61555933330520"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </div>
+          <ul class="footer-links">
+            <li><a href="index.html#accueil">Accueil</a></li>
+            <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
+            <li><a href="index.html#avantages">Avantages</a></li>
+            <li><a href="index.html#demo">Démo</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="legal.html">Mentions légales</a></li>
+          </ul>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/company/code-commerce-fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/codecommerce.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61555933330520"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Code Commerce. Tous droits réservés.</p>
+        <div class="copyright">
+          <p>&copy; 2025 CodeCommerce. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

@@ -738,6 +738,79 @@
         cursor: pointer;
       }
 
+      /* Pricing Section */
+      .pricing {
+        padding: 4rem 0;
+        background: #fff; /* White background for this section */
+      }
+      .pricing-card {
+        background: #f9fafb; /* Light gray for the card itself */
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+        text-align: center;
+        border: 1px solid #e5e7eb;
+        max-width: 700px; /* Limit card width */
+        margin: 0 auto; /* Center the card */
+      }
+      .pricing-card h3 {
+        font-size: 1.8rem;
+        color: #2563eb; /* Blue for the title */
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .pricing-card .price {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #1e293b; /* Darker text for price */
+        margin-bottom: 0.5rem;
+      }
+      .pricing-card .price-subtitle {
+        font-size: 1rem;
+        color: #64748b;
+        margin-bottom: 2rem;
+      }
+      .pricing-card ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+      .pricing-card ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        font-size: 1.05rem;
+        color: #334155;
+      }
+      .pricing-card ul li i {
+        color: #16a34a; /* Green checkmark */
+        margin-right: 0.75rem;
+        font-size: 1.2rem;
+      }
+      .pricing-card .customization-note {
+        font-size: 0.95rem;
+        color: #4b5563;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: #eef2ff; /* Light blueish background for note */
+        border-radius: 8px;
+        border-left: 4px solid #2563eb;
+      }
+      .pricing-card .digital-check-note {
+        font-size: 0.9rem;
+        color: #4b5563;
+        margin-top: 1.5rem;
+        padding: 0.8rem;
+        background-color: #f0fdf4; /* Light greenish background */
+        border-radius: 8px;
+        border-left: 4px solid #16a34a;
+      }
+      .pricing-card .btn-primary {
+         margin-top: 1rem;
+      }
+
       /* Footer */
       .footer {
         background: #1e293b;
@@ -1241,6 +1314,51 @@
       </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section id="tarifs" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Une Offre Transparente et Abordable</h2>
+          <p>Obtenez votre boutique e-commerce complète, prête à l\'emploi.</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Pack E-commerce Essentiel</h3>
+          <div class="price">3000€</div>
+          <p class="price-subtitle">Une fois, sans frais cachés ni abonnement mensuel.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i>Site e-commerce front-end au design moderne et responsive.</li>
+            <li>
+              <i class="fas fa-check-circle"></i>Back-office administrateur complet pour gérer produits, commandes,
+              clients.
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Backend robuste et performant pour toutes les fonctionnalités
+              e-commerce.
+            </li>
+            <li><i class="fas fa-check-circle"></i>Style et fonctionnalités basés sur notre site de démonstration.</li>
+            <li>
+              <i class="fas fa-check-circle"></i>Hébergement et nom de domaine non inclus (nous vous conseillons).
+            </li>
+          </ul>
+          <div class="customization-note">
+            <p>
+              <strong>Besoins spécifiques ?</strong> Pour des fonctionnalités additionnelles ou une refonte visuelle
+              majeure, <a href="#contact" style="color: #2563eb; text-decoration: underline">contactez-nous</a> pour un
+              devis personnalisé.
+            </p>
+          </div>
+          <a href="#contact" class="btn-primary">Démarrer votre projet</a>
+          <div class="digital-check-note">
+            <p>
+              <i class="fas fa-info-circle"></i> En France, vous pourriez être éligible au
+              <strong>"Chèque Numérique"</strong> pour co-financer la création de votre site. Renseignez-vous sur les
+              aides disponibles !
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
@@ -1285,58 +1403,46 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-top">
+        <div class="footer-content">
           <div class="footer-logo">
             <h2>Code<span>Commerce</span></h2>
             <p>Solutions e-commerce personnalisées</p>
           </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h3>Navigation</h3>
-              <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
-                <li><a href="#avantages">Avantages</a></li>
-                <li><a href="#demo">Démo</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>Légal</h3>
-              <ul>
-                <li><a href="legal.html">Mentions légales & Confidentialité</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>Suivez-nous</h3>
-              <div class="social-links">
-                <a
-                  href="https://www.linkedin.com/company/code-commerce-fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/codecommerce.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61555933330520"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </div>
-            </div>
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+            <li><a href="#avantages">Avantages</a></li>
+            <li><a href="#demo">Démo</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="legal.html">Mentions légales</a></li>
+          </ul>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/company/code-commerce-fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/codecommerce.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61555933330520"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="copyright">
           <p>&copy; 2025 CodeCommerce. Tous droits réservés.</p>
         </div>
       </div>
@@ -1387,9 +1493,9 @@
           "email": "contact@code-commerce.fr"
         },
         "sameAs": [
-          "https://www.linkedin.com/company/code-commerce/",
-          "https://twitter.com/code-commerce",
-          "https://github.com/code-commerce"
+          "https://www.linkedin.com/company/code-commerce-fr/",
+          "https://www.instagram.com/codecommerce.fr/",
+          "https://www.facebook.com/profile.php?id=61555933330520"
         ],
         "offers": {
           "@type": "Offer",
