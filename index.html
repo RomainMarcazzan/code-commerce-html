@@ -44,7 +44,7 @@
     <!-- Security Headers -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://email-api.code-commerce.fr;"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.code-commerce.fr;"
     />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
@@ -1489,7 +1489,7 @@
             // Remplacez '/api/send-email' par l'URL réelle de votre endpoint backend
             // déployé via Coolify.
             // Par exemple: 'https://api.code-commerce.fr/send-email'
-            const response = await fetch("https://email-api.code-commerce.fr", {
+            const response = await fetch("https://api.code-commerce.fr/v1/send-email", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
