@@ -739,102 +739,65 @@
       }
 
       /* Footer */
-      footer {
-        background: #0f172a;
-        color: #f1f5f9;
-        padding: 4rem 0 2rem;
-        margin-top: 6rem;
-        position: relative;
+      .footer {
+        background: #1e293b;
+        color: #e2e8f0;
+        padding: 3rem 0 1.5rem;
+        text-align: center;
       }
-      footer:before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: linear-gradient(90deg, #2563eb, #f97316);
+      .footer .container {
+        padding-bottom: 1.5rem;
       }
-      .footer-top {
+      .footer-content {
         display: flex;
-        flex-wrap: wrap;
-        gap: 3rem;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
       }
       .footer-logo h2 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
         font-weight: 700;
-        margin-bottom: 1rem;
-        letter-spacing: -0.5px;
+        color: #fff;
+        margin-bottom: 0.5rem;
       }
       .footer-logo span {
         color: #f97316;
       }
-      .footer-logo p {
-        color: #cbd5e1;
-        margin-bottom: 1.5rem;
-        max-width: 300px;
-      }
       .footer-links {
-        display: flex;
-        gap: 3rem;
-      }
-      .footer-column h3 {
-        margin-bottom: 1.25rem;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #f8fafc;
-        position: relative;
-        display: inline-block;
-      }
-      .footer-column h3:after {
-        content: "";
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        width: 30px;
-        height: 2px;
-        background: #2563eb;
-      }
-      .footer-column ul {
         list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1rem;
       }
-      .footer-column ul li {
-        margin-bottom: 0.75rem;
+      .footer-links a {
+        color: #94a3b8;
+        transition: color 0.3s ease;
       }
-      .footer-column a {
-        color: #cbd5e1;
-        transition: color 0.3s;
-        padding: 3px 0;
+      .footer-links a:hover {
+        color: #fff;
       }
-      .footer-column a:hover {
-        color: #f97316;
-      }
-      .social-icons {
+      .social-links {
         display: flex;
         gap: 1rem;
+        margin-bottom: 1.5rem;
       }
-      .social-icons a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 36px;
-        height: 36px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        transition: all 0.3s ease;
+      .social-links a {
+        color: #94a3b8;
+        font-size: 1.5rem;
+        transition: color 0.3s ease, transform 0.3s ease;
       }
-      .social-icons a:hover {
-        background: #2563eb;
-        transform: translateY(-3px);
+      .social-links a:hover {
+        color: #fff;
+        transform: scale(1.1);
       }
-      .footer-bottom {
-        text-align: center;
-        margin-top: 3rem;
+      .copyright {
         font-size: 0.9rem;
         color: #94a3b8;
-        padding-top: 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid #334155;
+        padding-top: 1.5rem;
+        margin-top: 1rem;
       }
 
       /* Responsive */
@@ -1347,10 +1310,28 @@
             </div>
             <div class="footer-column">
               <h3>Suivez-nous</h3>
-              <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/company/code-commerce-fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/codecommerce.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555933330520"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  ><i class="fab fa-facebook"></i
+                ></a>
               </div>
             </div>
           </div>
