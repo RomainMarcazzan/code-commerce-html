@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://romainmarcazzan.github.io/code-commerce-vitrine/sitemap.xml
+Sitemap: https://code-commerce.fr/sitemap.xml
