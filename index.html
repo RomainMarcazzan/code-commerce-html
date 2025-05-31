@@ -44,7 +44,7 @@
     <!-- Security Headers -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.code-commerce.fr;"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.code-commerce.fr;"
     />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
@@ -792,20 +792,22 @@
       .pricing-card ul {
         list-style: none;
         padding: 0;
-        margin-bottom: 2rem;
+        margin: 1.5rem 0;
         text-align: left;
       }
       .pricing-card ul li {
         display: flex;
-        align-items: center;
-        margin-bottom: 0.8rem;
-        font-size: 1.05rem;
-        color: #334155;
+        align-items: flex-start; /* Aligne l\'icône avec le début du bloc de texte */
+        margin-bottom: 1rem;    /* Augmentation de l\'espacement vertical */
+        font-size: 1rem;        /* Légère augmentation de la taille de la police */
+        color: #4b5563;         /* Texte en gris foncé */
+        line-height: 1.6;       /* Amélioration de la lisibilité pour les éléments sur plusieurs lignes */
       }
       .pricing-card ul li i {
-        color: #16a34a; /* Green checkmark */
-        margin-right: 0.75rem;
-        font-size: 1.2rem;
+        color: #16a34a; /* Green color for check icons */
+        margin-right: 1rem; /* Increased spacing between icon and text */
+        font-size: 1.5em; /* Made icon larger */
+        margin-top: 0.15em; /* Adjusted top margin for better alignment with larger icon */
       }
       .pricing-card .customization-note {
         font-size: 0.95rem;
@@ -1345,19 +1347,15 @@
           <div class="price">3000€</div>
           <p class="price-subtitle">Une fois, sans frais cachés ni abonnement mensuel.</p>
           <ul>
-            <li><i class="fas fa-check-circle"></i>Site e-commerce front-end au design moderne et responsive.</li>
+            <li><i class="fas fa-check"></i>Site e-commerce front-end au design moderne et responsive.</li>
             <li>
-              <i class="fas fa-check-circle"></i>Back-office administrateur complet pour gérer produits, commandes,
-              clients.
+              <i class="fas fa-check"></i>Back-office administrateur complet pour gérer produits, commandes, clients.
             </li>
             <li>
-              <i class="fas fa-check-circle"></i>Backend robuste et performant pour toutes les fonctionnalités
-              e-commerce.
+              <i class="fas fa-check"></i>Backend robuste et performant pour toutes les fonctionnalités e-commerce.
             </li>
-            <li><i class="fas fa-check-circle"></i>Style et fonctionnalités basés sur notre site de démonstration.</li>
-            <li>
-              <i class="fas fa-check-circle"></i>Hébergement et nom de domaine non inclus (nous vous conseillons).
-            </li>
+            <li><i class="fas fa-check"></i>Style et fonctionnalités basés sur notre site de démonstration.</li>
+            <li><i class="fas fa-check"></i>Hébergement et nom de domaine non inclus (nous vous conseillons).</li>
           </ul>
           <div class="customization-note">
             <p>
