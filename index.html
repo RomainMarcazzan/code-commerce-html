@@ -302,14 +302,26 @@
       }
 
       @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-15px); }
-        100% { transform: translateY(0px); }
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
       }
 
       @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       /* Features & Advantages */
@@ -435,7 +447,7 @@
         transform: translateY(-5px);
       }
       .testimonial:before {
-        content: """;
+        content: '""'; /* Corrected: Ensure content property has a valid string, like an opening quote */
         position: absolute;
         top: 10px;
         left: 20px;
@@ -719,7 +731,7 @@
         border: 1px solid #e2e8f0;
         border-radius: 8px;
         transition: all 0.3s;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
       }
       .form-group input:focus,
       .form-group textarea:focus {
@@ -798,10 +810,10 @@
       .pricing-card ul li {
         display: flex;
         align-items: flex-start; /* Aligne l\'icône avec le début du bloc de texte */
-        margin-bottom: 1rem;    /* Augmentation de l\'espacement vertical */
-        font-size: 1rem;        /* Légère augmentation de la taille de la police */
-        color: #4b5563;         /* Texte en gris foncé */
-        line-height: 1.6;       /* Amélioration de la lisibilité pour les éléments sur plusieurs lignes */
+        margin-bottom: 1rem; /* Augmentation de l\'espacement vertical */
+        font-size: 1rem; /* Légère augmentation de la taille de la police */
+        color: #4b5563; /* Texte en gris foncé */
+        line-height: 1.6; /* Amélioration de la lisibilité pour les éléments sur plusieurs lignes */
       }
       .pricing-card ul li i {
         color: #16a34a; /* Green color for check icons */
@@ -829,7 +841,7 @@
         border-left: 4px solid #16a34a;
       }
       .pricing-card .btn-primary {
-         margin-top: 1rem;
+        margin-top: 1rem;
       }
 
       /* Footer */
@@ -1130,7 +1142,10 @@
               <i class="fas fa-user-shield"></i>
             </div>
             <h3>Sécurité Renforcée</h3>
-            <p>Authentification JWT avec tokens de rafraîchissement pour protéger vos données.</p>
+            <p>
+              Protection avancée de vos données : mots de passe sécurisés, accès contrôlés, blocage des tentatives
+              suspectes et paiements 100% sécurisés (via Stripe).
+            </p>
           </div>
         </div>
       </div>
