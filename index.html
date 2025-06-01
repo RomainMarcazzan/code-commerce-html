@@ -915,6 +915,12 @@
         .contact-container {
           flex-direction: column;
         }
+        .contact-text-desktop {
+          display: none;
+        }
+        .contact-text-mobile {
+          display: block !important;
+        }
         .navbar .nav-links {
           position: absolute;
           top: 100%;
@@ -1406,7 +1412,10 @@
         <div class="contact-container">
           <div class="contact-info">
             <h3>Nous sommes à votre écoute</h3>
-            <p>Remplissez le formulaire ci-contre ou contactez-nous directement :</p>
+            <p class="contact-text-desktop">Remplissez le formulaire ci-contre ou contactez-nous directement :</p>
+            <p class="contact-text-mobile" style="display: none">
+              Remplissez le formulaire ci-dessous ou contactez-nous directement :
+            </p>
             <div class="info-item">
               <i class="fas fa-envelope"></i>
               <span>contact@code-commerce.fr</span>
