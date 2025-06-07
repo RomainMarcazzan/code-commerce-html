@@ -25,6 +25,13 @@ svg {
   display: block;
 }
 
+section h1,
+nav h1,
+article h1,
+aside h1 {
+  font-size: 2.25rem;
+}
+
 /* Container */
 .container {
   width: 90%;
