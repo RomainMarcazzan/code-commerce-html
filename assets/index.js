@@ -1,4 +1,3 @@
-// Burger Menu Toggle
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav-links");
 
@@ -7,7 +6,6 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("toggle");
 });
 
-// Smooth scroll for links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -19,7 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Contact Form Submission
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
   const formMessageSuccess = contactForm.querySelector("#form-message-success");
@@ -30,7 +27,6 @@ if (contactForm) {
     const submitButton = this.querySelector('button[type="submit"]');
     const originalButtonText = submitButton.textContent;
 
-    // Hide messages on new submission
     formMessageSuccess.style.display = "none";
     formMessageSuccess.textContent = "";
     formMessageError.style.display = "none";
@@ -62,9 +58,7 @@ if (contactForm) {
         let errorResult = { message: "Une erreur inconnue s'est produite." };
         try {
           errorResult = await response.json();
-        } catch (parseError) {
-          // If parsing fails, use the generic error message
-        }
+        } catch (parseError) {}
         formMessageError.textContent = errorResult.message || "Erreur lors de l'envoi du message.";
         formMessageError.style.display = "block";
       }
