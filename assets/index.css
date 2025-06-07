@@ -883,6 +883,11 @@ aside h1 {
 .pricing-card .btn-primary {
   margin-top: 1rem;
 }
+.pricing-demo-link {
+  text-decoration: underline;
+  color: #2563eb;
+  margin-left: 0.25em;
+}
 
 /* Footer */
 .footer {
