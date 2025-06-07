@@ -199,7 +199,7 @@ svg {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  .nav-links.active {
+  .nav-links.nav-active {
     display: flex;
   }
 
@@ -212,6 +212,19 @@ svg {
     display: block;
     padding: 1rem;
     width: 100%;
+    border-bottom: 1px solid #eee; /* Add a border to separate links */
+  }
+
+  .nav-links li a.btn-primary {
+    display: inline-block; /* Override block display */
+    width: auto; /* Override 100% width */
+    padding: 0.7rem 1.5rem; /* Keep original button padding */
+    margin-top: 0.5rem; /* Add some top margin */
+    margin-bottom: 0.5rem; /* Add some bottom margin for spacing if it's the last item */
+  }
+
+  .nav-links li:last-child a {
+    border-bottom: none; /* Remove border for the last link */
   }
 
   .nav-links li a:not(.btn-primary):after {
@@ -947,18 +960,21 @@ svg {
     right: 0;
     background: #fff;
     flex-direction: column;
-    width: 200px;
+    width: 100%; /* Changed from 200px to 100% for full width */
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    /* Added display: none; and changed active class behavior */
+    display: none;
   }
   .navbar .nav-links.nav-active {
     transform: translateX(0);
+    display: flex; /* Ensure it displays when active */
   }
   .burger {
     display: flex;
   }
   .nav-links li {
-    margin: 1rem 0;
+    margin: 0; /* Remove margin for a cleaner look */
   }
 
   /* Mobile enhancements */
