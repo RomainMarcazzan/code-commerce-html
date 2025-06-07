@@ -636,13 +636,15 @@
         letter-spacing: 0.5px;
       }
       .demo-cta {
-        background: #f1f5f9;
+        background: linear-gradient(120deg, #f9fafb 60%, #e8eef6 100%);
         color: #1e293b;
         padding: 2.5rem 0 2.5rem 0;
         text-align: center;
         border-radius: 16px;
         margin: 2.5rem 0 1.5rem 0;
         box-shadow: 0 4px 16px rgba(37, 99, 235, 0.07);
+        border: 1px solid #e5eaf1;
+        backdrop-filter: blur(0.5px);
       }
       .demo-cta h3 {
         font-size: 1.7rem;
@@ -663,6 +665,8 @@
         padding: 0.9rem 2.2rem;
         border-radius: 8px;
         margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
         transition: background 0.2s, color 0.2s, transform 0.2s;
         display: inline-block;
@@ -1071,7 +1075,8 @@
           text-align: center;
         }
         .demo-cta a.btn-primary {
-          width: 100%;
+          width: auto;
+          max-width: 100%;
         }
         .video-container {
           margin-bottom: 1.5rem;
