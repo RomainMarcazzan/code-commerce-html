@@ -61,6 +61,14 @@
     <!-- <meta http-equiv="X-Frame-Options" content="DENY" /> -->
     <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
 
+    <!-- Preconnects for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <!-- Preload hero image for LCP optimization -->
+    <link rel="preload" as="image" href="assets/hero-image.webp" />
+
     <link
       rel="preload"
       as="style"
